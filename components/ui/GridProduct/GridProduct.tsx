@@ -79,7 +79,7 @@ const GridProduct: FC<Props> = ({ className, children, variant, data = {} }) => 
                 <div
                   className="mb-2 px-4"
                   dangerouslySetInnerHTML={{
-                    __html: item?.description.substring(0, 100),
+                    __html: `${item?.description.substring(0, 100)}...`,
                   }}
                 />
               )}
